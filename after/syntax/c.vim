@@ -246,12 +246,11 @@ hi def link cAnsiName cIdentifier
 
 " Operators
 syn match cOperator	"\(<<\|>>\|[-+*/%&^|<>!=]\)="
-syn match cOperator	"<<\|>>\|&&\|||\|++\|--\|->"
-syn match cOperator	"[.!~*&%<>^|=,+-]"
+syn match cOperator	"<<\|>>\|&&\|||\|++\|--"
+syn match cOperator	"[.!~*&%<>^|=+-]"
 syn match cOperator	"/[^/*=]"me=e-1
 syn match cOperator	"/$"
 syn match cOperator "&&\|||"
-syn match cOperator	"[][]"
 
 " Preprocs
 syn keyword cDefined defined contained containedin=cDefine

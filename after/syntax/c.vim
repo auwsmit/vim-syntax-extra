@@ -247,7 +247,9 @@ hi def link cAnsiName cIdentifier
 " Operators
 syn match cOperator	"\(<<\|>>\|[-+*/%&^|<>!=]\)="
 syn match cOperator	"<<\|>>\|&&\|||\|++\|--"
-syn match cOperator	"[!~*&%<>^|=+-]"
+syn match cOperator	"[!~*&%<^|=+]"
+syn match cOperator	"-\ze>\@!"
+syn match cOperator	"\%(-\)\@<!>"
 syn match cOperator	"/[^/*=]"me=e-1
 syn match cOperator	"/$"
 syn match cOperator "&&\|||"
